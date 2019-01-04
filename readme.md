@@ -1,9 +1,9 @@
 # SLIMme Vis
 A visualization of the candidate exploration in SLIM.
 
-[Demo here](https://rawgit.com/Hizoul/slimme-vis/master/webpackDist/index.html)
+[Demo here](https://github.com/Hizoul/slimme-vis)
 
-[Paper here](https://rawgit.com/Hizoul/slimme-vis/master/paper/report.pdf)
+[Paper here](https://cdn.jsdelivr.net/gh/Hizoul/slimme-vis@master/paper/report.pdf)
 
 # Compliation instructions
 Requires Node.js to be installed on your machine
