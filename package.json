@@ -30,7 +30,7 @@
   },
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server --config ./webpack.config.ts --port 4201 --content-base webpackDist",
-    "build": "./node_modules/.bin/webpack",
+    "build": "./node_modules/.bin/webpack --config ./webpack.config.prod.ts",
     "local": "cross-env ./node_modules/.bin/ts-node src/node/test"
   },
   "jest": {
