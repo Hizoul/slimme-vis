@@ -111,7 +111,7 @@ Thanks to Shannons Entropy one can convert the usage into a probability distribu
 P(X|D) = \frac{usage_D(X)}{\sum_{Y\in CT}usage_D(Y)}
 \end{equation}
 
-This in turn allows the assignment of a code length for each of the set in the code table \emph{CT} (more frequent = shorter code). The code length is also a metric that is sometimes displayed on the right hand side of the code table.
+This in turn allows the assignment of a code length for each of the set in the code table \emph{CT} (more frequent = shorter code).
 
 The individual set code lengths can be combined to calculate the required amount of bits to encode a full database \emph{D} via a code table \emph{CT}
 
@@ -132,7 +132,7 @@ $L(H)$ is the amount of bits required to represent the description / code table 
 \subsection{Candidates}
 \label{sec:candidates}
 SLIM builds a list of candidate sets \emph{F}.
-A candidate is a set of items, that is probably a frequent pattern. A frequent pattern is defined as a pattern which support passes a user defined \emph{minimum support threshold} (minsup)
+A candidate is a set of items, that is probably a frequent pattern. A frequent pattern is defined as a pattern which support passes a user defined \emph{minimum support threshold} (minsup).
 
 \begin{equation}
 \label{eq:minsup}
@@ -150,7 +150,7 @@ To numerically determine the quality of a given code table the relative compress
 
 \begin{equation}
 \label{eq:relative}
-L% = \frac{L(D, CT)}{L(D, ST)} * 100
+L\% = \frac{L(D, CT)}{L(D, ST)} * 100
 \end{equation}
 
 \section{Problem Statement}
@@ -182,7 +182,7 @@ Additionally the analyst can vary the sorting between descending and ascending g
 The following experiment is made on a small prepared dataset, which is displayed (and modifiable) within the tool.
 The effect of the achievable compression (see Equation \ref{eq:relative}) already becomes clear by merely switching between the different offered sortings (namely Gain Descending, Ascending, Random).
 The standard descending gain order finds its optimum at a compression rate of 30.48\%. Using a random sort however shows that the compression can go as low as 26.67\% as evident from Figure \ref{fig:random}. Since the order is random it might take a few tries of selecting the random sort to reproduce the result.
-\begin{figure}[H]
+\begin{figure}
 \center
 \includegraphics[width=1\linewidth]{img/random_better.png}
 \caption{The candidate explorer, displaying up to 10 candidates from \emph{F}. Random sort is applied in this instance.}
@@ -192,7 +192,7 @@ The standard descending gain order finds its optimum at a compression rate of 30
 Manually exploring within the descending gain order, as shown in Figure \ref{fig:customWalk}, reveals that one has to use options that wouldn't be considered by the heuristic multiple times in order to achieve a compression of 26.67\%.
 The ascending gain order, as to be expected, delivers the worst result with 63.35\%. With random similarly bad results are possible.
 
-\begin{figure}[H]
+\begin{figure}
 \center
 \includegraphics[width=1\linewidth]{img/custom_walk.png}
 \caption{The candidate explorer, displaying up to 10 candidates from \emph{F}. The standard descending gain order is applied, and a custom path chosen to reproduce the achieved compression of a lucky random exploration displayed in Figure \ref{fig:random}.}
@@ -221,15 +221,15 @@ An interesting aspect of these preattentive features is that they can be process
 However it is important to note, that using too many preattentive features at once, can actually decrease the subjects unconcious processing, and requires more manual focus\cite{wolfe1992parallel}.
 Building upon this knowledge, every variable introduced in the preliminaries Section \ref{sec:preliminaries} (e.g. transaction \emph{t}) is associated to a specific color and icon. An example of this can be seen in Figure \ref{fig:colors}.
 
+Furthermore for every item \emph{i} that occurs in the sets of transactions and code tables, a \emph{translation} is used to translate the item id into a shape. That way while exploring possible candidates the user can more quickly recognize a path of items he would like to follow.
+
+
 \begin{figure}[H]
 \center
 \includegraphics[width=1\linewidth]{img/color_coding.png}
 \caption{An example of color coding keywords in the explanation to enhance recognizability.}
 \label{fig:colors}
 \end{figure}
-Furthermore for every item \emph{i} that occurs in the sets of transactions and code tables, a \emph{translation} is used to translate the item id into a shape. That way while exploring possible candidates the user can more quickly recognize a path of items he would like to follow.
-
-
 \section{Conclusion}
 An interactive learning experience, optimized for learning efficiency (Section \ref{sec:learning}), has been created to ease the user into the world of ITDM at the example of SLIM.
 Furthermore the candidate space exploration of SLIM has been made interactive and now allows the analyst to influence the result according to his beliefs (Section \ref{sec:problem}). Section \ref{sec:experiment} underlined how the default heuristic used in SLIM only produces a local optimum. This was proven by showing that the default sort finds a relative compressiomn of 30.48\% whereas a manual exploration and also a completely random one can achieve up to 26.67\%.
