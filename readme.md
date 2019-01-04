@@ -1,7 +1,7 @@
 # SLIMme Vis
 A visualization of the candidate exploration in SLIM.
 
-[Demo here](https://github.com/Hizoul/slimme-vis)
+[Demo here](https://hizoul.github.io/slimme-vis/)
 
 [Paper here](https://cdn.jsdelivr.net/gh/Hizoul/slimme-vis@master/paper/report.pdf)
 
