@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProcessDB should process local file: processed mushroomset 1`] = `
+Object {
+  "0": Array [
+    Array [
+      1,
+      2,
+      3,
+    ],
+    Array [
+      1,
+      2,
+      3,
+    ],
+    Array [
+      1,
+      2,
+      3,
+    ],
+    Array [
+      1,
+      2,
+      3,
+    ],
+    Array [
+      1,
+      2,
+      3,
+    ],
+    Array [
+      1,
+      2,
+    ],
+    Array [
+      1,
+    ],
+    Array [
+      2,
+    ],
+  ],
+  "undefined": Array [
+    Array [],
+    Array [],
+  ],
+}
+`;

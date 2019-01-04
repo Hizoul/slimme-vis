@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProcessDB code length: result of diffLength 1`] = `72.72889087402703`;
+
+exports[`ProcessDB code length: result of difftable 1`] = `157.1163999531414`;
+
+exports[`ProcessDB code length: result of initialLength 1`] = `79.28421251514429`;

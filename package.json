@@ -1,0 +1,66 @@
+{
+  "name": "slim-vis",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "author": "MMB2 <git@mmb2.click>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/d3": "^5.0.1",
+    "@types/jest": "^23.3.9",
+    "@types/js-sha512": "^0.7.0",
+    "@types/node": "^10.12.10",
+    "@types/react": "^16.7.7",
+    "@types/react-dom": "^16.0.10",
+    "@types/webpack": "^4.4.19",
+    "@types/webpack-dev-server": "^3.1.1",
+    "css-loader": "^1.0.1",
+    "jest": "^23.6.0",
+    "js-sha512": "^0.8.0",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "ts-jest": "^23.10.5",
+    "ts-loader": "^5.3.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.6",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10",
+    "worker-loader": "^2.0.0"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server --config ./webpack.config.ts --port 4201 --content-base webpackDist",
+    "build": "./node_modules/.bin/webpack",
+    "local": "cross-env ./node_modules/.bin/ts-node src/node/test"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "testPathIgnorePatterns": [
+      "\\.snap$",
+      "<rootDir>/node_modules/",
+      "<rootDir>/lib",
+      "<rootDir>/dist"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  },
+  "dependencies": {
+    "@potion/element": "^1.0.0-next.0",
+    "@potion/layout": "^1.0.0-next.0",
+    "@types/lodash": "^4.14.118",
+    "d3": "^5.7.0",
+    "localforage": "^1.7.3",
+    "lodash": "^4.17.11",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-icons": "^3.2.2",
+    "resub": "^1.0.13",
+    "resub-persist": "^1.2.8"
+  }
+}

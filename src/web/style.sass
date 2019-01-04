@@ -1,0 +1,189 @@
+@import "./fonts/Lato-Regular.ttf"
+
+$c1: #fafbfc
+$c2: #AEBAC8
+$c3: #63B2CF
+$c4: #849DCB
+$c5: #5981C2
+$highlight: #dadada
+$defaultMargin: 1rem
+
+
+html, body
+  margin: 0pt
+  padding: 0pt
+  width: 100vw
+  height: 100vh
+  font-family: 'Lato', sans-serif
+
+.center
+  display: flex
+  flex: 1
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  align-content: center
+  padding: 1rem 0rem
+  text-align: center
+
+.inline
+  display: flex
+  flex-direction: row
+.column
+  display: flex
+  flex-direction: column
+
+.button
+  padding: 1rem
+  background-color: rgba(0, 0, 0, 0.3)
+  border-radius: 0.8rem
+  font-size: 1.4rem
+  justify-content: center
+  &:hover
+    cursor: pointer
+    background-color: rgba(0, 0, 0, 0.7)
+
+.noMargin
+  margin: 0pt
+
+.marginRight
+  margin-right: $defaultMargin
+.marginLeft
+  margin-left: $defaultMargin
+.marginBottom
+  margin-bottom: $defaultMargin
+
+.paddingContainer
+  padding: 1rem
+
+.header
+  padding: 20pt 0pt
+
+.c1
+  background-color: $c1
+  color: black
+
+.c2
+  background-color: $c2
+  color: white
+
+.c3
+  background-color: $c3
+  color: white
+
+.c4
+  background-color: $c4
+  color: white
+
+.c5
+  background-color: $c5
+  color: white
+
+.text-c1
+  color: $c1
+.text-c2
+  color: $c2
+.text-c3
+  color: $c3
+.text-c4
+  color: $c4
+.text-c5
+  color: $c5
+.text-highlight
+  color: $highlight
+.text-highlight-main
+  color: #8bff45
+
+.textIcon
+  margin-bottom: -0.15rem
+  margin-right: 0.2rem
+
+.line
+  margin-top: 0.7rem
+  margin-bottom: 0.7rem
+  font-size: 1.3rem
+
+.codeTableEntry
+  display: flex
+  flex-direction: row
+  div
+    display: flex
+    min-width: 90px
+    justify-content: center
+    &:first-child
+      flex: 2
+      border-right: 1px solid black
+    &:nth-child(3)
+      border-left: 1px solid black
+
+.codeTableEntry.tableHeader
+  div
+    padding-bottom: $defaultMargin
+    justify-content: center
+.setItem
+  margin-right: 0.35rem
+
+.codeTable, .database
+  font-size: 1.15rem
+  display: flex
+  flex-direction: column
+  flex: 1
+
+.highlighted
+  background-color: rgba(0, 255, 0, 0.3)
+
+.flex, .flex1, .candidateButtons
+  display: flex
+
+.flex1, .candidateButtons
+  flex: 1
+.candidate
+  display: flex
+  flex-direction: column
+  flex: 1
+  background-color: rgba(0, 0, 0, 0.3)
+  &.active
+    background-color: rgba(255, 255, 255, 0.3)
+  &:hover
+    cursor: pointer
+    background-color: rgba(0, 0, 0, 0.7)
+
+.candidateInfo
+  text-align: center
+  padding: 0.5rem 0pt
+
+.candidateButtons
+  a
+    display: flex
+    flex: 1
+    justify-content: center
+    padding: 1rem 0pt
+    background-color: rgba(0, 0, 0, 0.3)
+    &:hover
+      cursor: pointer
+      background-color: rgba(0, 0, 0, 0.7)
+
+.popup
+  background-color: white
+  color: black
+  border-radius: 20pt
+  box-shadow: 0pt 0pt 5pt 10pt rgba(0, 0, 0, 0.1)
+  position: fixed
+  width: 40vw
+  height: 90vh
+  left: calc(50vw - 20vw)
+  top: calc(50vh - 45vh)
+
+.limitHeight
+  max-height: 60vh
+  overflow-y: scroll
+
+@keyframes growing
+  0%
+    transform: scale(1) rotate(30deg)
+  50%
+    transform: scale(1.5) rotate(30deg)
+  100%
+    transform: scale(1) rotate(30deg)
+.bigIcon
+  font-size: 2rem

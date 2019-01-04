@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProcessDB should process local file: cover of set over codetable 1`] = `
+Array [
+  Array [
+    2,
+    4,
+  ],
+  Array [
+    3,
+  ],
+  Array [
+    1,
+  ],
+]
+`;

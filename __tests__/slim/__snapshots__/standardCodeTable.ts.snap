@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProcessDB cover sort algo: result of sort 1`] = `
+Array [
+  Array [
+    Array [
+      100,
+      102,
+    ],
+    Array [
+      100,
+    ],
+  ],
+  Array [
+    Array [
+      100,
+    ],
+    Array [
+      100,
+    ],
+  ],
+]
+`;
+
+exports[`ProcessDB cover sort algo: result of sort 2`] = `
+Array [
+  Array [
+    Array [
+      100,
+      102,
+    ],
+    Array [
+      100,
+    ],
+  ],
+  Array [
+    Array [
+      100,
+    ],
+    Array [
+      100,
+    ],
+  ],
+]
+`;
+
+exports[`ProcessDB should process local file: before sort 1`] = `"caefdd1c029de137073f2a3f3f7dcd830b1be321c6bd4c6d20b1fa34a1b2dccf6db11d8d9e0448916a3fa41d1512ef1755b596fe273c9bdf2f6a521a58c92db0"`;
+
+exports[`ProcessDB should process local file: standard code table of mushroomset 1`] = `
+Array [
+  Array [
+    Array [
+      2,
+    ],
+    Array [
+      7,
+    ],
+  ],
+  Array [
+    Array [
+      1,
+    ],
+    Array [
+      7,
+    ],
+  ],
+  Array [
+    Array [
+      3,
+    ],
+    Array [
+      5,
+    ],
+  ],
+]
+`;
